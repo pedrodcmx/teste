@@ -1,0 +1,14 @@
+<script>
+    var numeros = [12, 45, 8, 91, 32];
+    // 1. Assuminos que o primeiro item é o maior (12)
+    var maior_valor = numeros[0];
+    // 2. Iteração nos demais itens (à partir do índice 1)
+    for (var i = 1; i < numeros.length; i++) {
+        // 3. Para cada loop vereficica se o valor iterado é maior que o atual
+        if (numeros[i] > maior_valor) {
+            // 4. Se for maior, atribui a variável
+            maior_valor = numeros[i];
+        }
+    }
+    alert("Maior número: " + maior_valor);
+</script>

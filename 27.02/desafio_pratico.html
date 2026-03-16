@@ -1,0 +1,27 @@
+1- <script>
+ 
+ let msg1 = "Digite a sua primeira nota : "
+ let msg2 = "Digite a sua segunda nota : "
+ let msg3 = "Digite a sua terceira nota : "
+
+const nota1 = parseFloat(prompt(msg1));
+const nota2 = parseFloat(prompt(msg2));
+const nota3 = parseFloat(prompt(msg3));
+
+    function Resultado (nota1,nota2,nota3){
+        calcularMedia = (nota1 + nota2 +nota3)/3;
+        alert(calcularMedia)
+        if ( calcularMedia > 7){
+            return "Aprovado";
+        } else if (calcularMedia = 6){
+            return "Recuperação";
+        } else if (calcularMedia < 6){
+            gay = 7 - calcularMedia 
+            return "Reprovado, faltam "+calcularMedia+ " pontos."
+        }
+       
+    }
+
+    let habilitavel = Resultado(nota1,nota2,nota3);
+    alert(habilitavel);
+</script>
